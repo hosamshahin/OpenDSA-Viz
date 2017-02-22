@@ -1,0 +1,140 @@
+text {
+  font: 10px sans-serif;
+}
+#sliders {
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  top: 10px;
+  left: 970px;
+  width: 350px;
+  height: 700px;
+}
+.selection, .sliding {
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+#title {
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
+}
+#sub_title {
+  margin-left: 5px;
+}
+p {
+  margin-top: 10px;
+}
+svg {
+  display: block;
+}
+#instructions {
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  top: 8px;
+  left: 970px;
+  width: 350px;
+  height: 154px;
+}
+#nodecolor {
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  top: 175px;
+  left: 970px;
+  width: 350px;
+  height: 230px;
+}
+#nodesize {
+  border-style: solid;
+  border-color: grey;
+  position: absolute;
+  top: 417px;
+  left: 970px;
+  width: 350px;
+  height: 280px;
+}
+h2 {
+  margin: auto;
+  width: 140px;
+}
+li {
+  margin-top: 10px;
+}
+.title {
+  margin: auto;
+  width: 25%;
+  margin-top: 10px;
+}
+.selection, .sliding {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+/*color sliders*/
+#colorThresholdSlider .ui-slider-range {
+  background: #D11C24;
+}
+#colorThresholdSlider.ui-slider {
+  background: #2176C7;
+}
+.axis .domain {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .3;
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+.axis .halo {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 8px;
+  stroke-linecap: round;
+}
+.axis .tick {
+  font: 10px sans-serif;
+}
+.selecting circle {
+  fill-opacity: .2;
+}
+.selecting circle.selected {
+  stroke: #f00;
+}
+.slider .handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: .5;
+  stroke-width: 1.25px;
+  cursor: crosshair;
+}
+.axisDistScale {
+  font: 10px sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.axisDistScale .domain {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .3;
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+.axisDistScale .halo {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 8px;
+  stroke-linecap: round;
+}
+.sliderDistScale .handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: .5;
+  stroke-width: 1.25px;
+  cursor: crosshair;
+}

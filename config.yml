@@ -1,0 +1,154 @@
+params:
+    processed: '../processed/'
+    data_dir: 'data/'
+    logs_dir: 'logs/'
+    results_dir: 'results/'
+    trails_dir: 'trials/'
+    cm_dir: 'cm/'
+    figs_dir: 'figs/'
+    models_dir: 'models/'
+    grades_dir: 'grades/'
+    odsa_config_dir: 'odsa_config'
+    config_file: 'CS3.json'
+    local_hostname:
+                - 'vaio'
+                - 'ltitest'
+    num_of_nodes: 5
+    num_of_cores: 16
+    col_groups: 1
+    semesters:
+            - F2014
+            - S2016
+            - F2016
+    # semester: F2016
+    semester: S2016
+    # semester: F2014
+    # semester: merged
+    num_test_students: 1
+    fn_name: 'calc_tot_reading_time'
+    # fn_name: 'calc_features'
+    prof_date_default: '2012-01-01 00:00:00'
+    merging_semesters:
+                - S2016
+                - F2016
+    merge_dir: CS3114_merge
+
+run_model:
+    run_method: 'best'
+    # run_method: 'majority_vote'
+    show_vis: False
+    save_vis: False
+    save_model: False
+    show_cm: True
+    save_cm: False
+    save_cm_fig: True
+
+hyperopt:
+    max_evals: 300
+    cross_validation: False
+    model_params:
+                - svm
+                # - decisionTree
+                # - randomForestClassifier
+                # - MLPClassifier
+    data_params:
+            # - tots_KA
+            # - tots_KA-SUMM
+            # - tots_PRO
+            # - tots_KA_mod
+            # - tots_PRO_mod
+            # - tots_PRO_KA_mod
+            # - tots_PRO_KA
+            # - tots_KA-PRO # good one
+            # - mod_PRO_KA
+            # - mod_KA
+            # - mod_PRO
+            # - mod_prof_dt_diff # good one
+            # - mod
+            # - KA-SUMM # good one for midterm1
+            # - KA-PRO
+            # - PRO # good one for final
+            # - KA
+            # - PRO_KA
+            # - prof_dt_diff
+            - opendsa_scores
+    pre_params:
+            # - scale
+            - standard
+            # - normalize
+            # - pca
+F2014:
+    course_path: 'CS3114_2014_Fall'
+    book_id: 5
+    sections_enabled: False
+    new_infra: False
+    start: '2014-08-01'
+    end: '2014-12-31'
+
+S2016:
+    course_path: 'CS3114_2016_Spring'
+    book_id: 343
+     344
+    sections_enabled: True
+    new_infra: False
+    start: '2016-01-01'
+    end: '2016-05-31'
+
+F2016:
+    course_path: 'CS3114_2016_Fall'
+    book_id: 4
+    sections_enabled: True
+    new_infra: True
+    start: '2016-08-01'
+    end: '2016-12-31'
+
+merged:
+    course_path: 'CS3114_merge'
+    book_id: 4
+    sections_enabled: True
+    new_infra: True
+    start: '2016-08-01'
+    end: '2016-12-31'
+
+execluded_cols:
+            - sessions
+            - tot_tm
+            - no_outliers
+            - outliers_median
+            # - outliers_upper
+            - sessions_before_prof
+            - tm_before_prof
+            - tm_before_prof_no_outliers
+            - tm_before_prof_outlier_median
+            - tm_before_prof_outlier_upper
+            - sessions_after_prof
+            - tm_after_prof
+            - tm_after_prof_no_outliers
+            - tm_after_prof_outlier_median
+            - tm_after_prof_outlier_upper
+            # - tot_atts
+            - atts_before_prof
+            - atts_after_prof
+            - tot_resets
+            - resets_before_prof
+            - resets_after_prof
+            - tot_model_ans
+            - model_ans_before_prof
+            - model_ans_after_prof
+            - tot_hints
+            - hints_before_prof
+            - hints_after_prof
+            - prof_dt
+            - prof_dt_diff
+
+included_cols:
+            - tm_before_prof_outlier_median
+            - tm_after_prof_outlier_median
+            - atts_before_prof
+            - atts_after_prof
+            - hints_before_prof
+            - hints_after_prof
+
+execluded_ex:
+            - AV
+            - SS

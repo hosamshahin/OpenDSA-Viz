@@ -1,0 +1,39 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.7.0/js-yaml.min.js"></script>
+    <script src='https://code.highcharts.com/highcharts.js' type='text/javascript'></script>
+    <script src='https://code.highcharts.com/highcharts-more.js' type='text/javascript'></script>
+    <style>
+    #container {
+      display: block;
+      margin: auto;
+      width: 95%;
+      height: 85%;
+      position: absolute;
+    }
+    </style>
+  </head>
+  <body>
+    <button onclick="window.location='home.html'">Exercises Analysis</button>
+    <button onclick="window.location='ex_analysis_bubble.html'">Exercises Difficulty</button>
+    <button onclick="window.location='reading_time.html'">Reading Time</button>
+    <button onclick="window.location='reading_time_module.html'" disabled>Reading Time /module</button>
+
+    <div id="wrapper" style="text-align: center">
+      <h3>CS3114 Total reading time for all students per module</h3>
+      <div id="from-mod" style="display: inline-block;">From Module:</div>
+      <select id='from-mod-select'>
+      </select>
+      <div id="to-mod" style="display: inline-block;">To Module:</div>
+      <select id='to-mod-select'>
+      </select>
+      <button id="display-btn" type="button">Display</button>
+    </div>
+    <div id="container" class='highcharts'></div>
+  </div>
+</body>
+<script src="./reading_time_module.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercises Analysis</title>
+    <!-- SlickGrid -->
+    <link rel="stylesheet" href="lib/slickgrid/slick.grid.css" type="text/css"/>
+    <link rel="stylesheet" href="lib/slickgrid/jquery-ui-1.8.16.custom.css" type="text/css"/>
+    <link rel="stylesheet" href="lib/slickgrid/examples.css" type="text/css"/>
+    <link rel="stylesheet" href="lib/slickgrid/slick.pager.css" type="text/css"/>
+    <script src="lib/slickgrid/jquery-1.7.min.js"></script>
+    <script src="lib/slickgrid/jquery.event.drag-2.0.min.js"></script>
+    <script src="lib/slickgrid/slick.core.js"></script>
+    <script src="lib/slickgrid/slick.grid.js"></script>
+    <script src="lib/slickgrid/slick.pager.js"></script>
+    <script src="lib/slickgrid/slick.dataview.js"></script>
+    <!-- End SlickGrid -->
+    <link rel="stylesheet" type="text/css" href="lib/d3.parcoords.css">
+    <link rel="stylesheet" type="text/css" href="ex_analysis_parallel.css">
+    <style>
+    body, html {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    #grid, #pager {
+        position: fixed;
+        width: 100%;
+    }
+    #grid {
+        bottom: 0;
+        height: 287px;
+    }
+    #pager {
+        bottom: 293px;
+        height: 20px;
+    }
+    .slick-row:hover {
+        font-weight: bold;
+        color: #069;
+    }
+    </style>
+  </head>
+  <body>
+    <button onclick="window.location='index.html'" disabled>Exercises Analysis</button>
+    <button onclick="window.location='ex_analysis_bubble.html'">Exercises Difficulty</button>
+    <button onclick="window.location='reading_time.html'">Reading Time</button>
+    <button onclick="window.location='reading_time_module.html'">Reading Time /module</button>
+
+    <div id="example" class="parcoords" style="height:450px;"></div>
+    <div id="grid"></div>
+    <div id="pager"></div>
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/d3.parcoords.js"></script>
+    <script src="lib/divgrid.js"></script>
+    <script src="ex_analysis_parallel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" href="https://rawgit.com/simeydotme/jQuery-ui-Slider-Pips/master/dist/jquery-ui-slider-pips.css">
+    <link rel="stylesheet" href="ex_analysis_bubble.css">
+  </head>
+  <body>
+
+    <button onclick="window.location='home.html'">Exercises Analysis</button>
+    <button onclick="window.location='ex_analysis_bubble.html'" disabled="">Exercises Difficulty</button>
+    <button onclick="window.location='reading_time.html'">Reading Time</button>
+    <button onclick="window.location='reading_time_module.html'">Reading Time /module</button>
+
+    <div id="sliders">
+      <p id='title'>Weights for each factor:</p>
+      <p id="sub_title">Before Proficiency:</p>
+      <div id="attempts">
+        <div class="sliding">
+          <p>Total Attempts:</p>
+          <div id="attempts_slider"></div>
+        </div>
+      </div>
+      <div id="hints">
+        <div class="sliding">
+          <p>Total Hints:</p>
+          <div id="hints_slider"></div>
+        </div>
+      </div>
+      <div id="time">
+        <div class="sliding">
+          <p>Total Time:</p>
+          <div id="time_slider"></div>
+        </div>
+      </div>
+      <p id="sub_title">After Proficiency:</p>
+      <div id="attempts_aft">
+        <div class="sliding">
+          <p>Total Attempts After:</p>
+          <div id="attempts_aft_slider"></div>
+        </div>
+      </div>
+      <div id="hints_aft">
+        <div class="sliding">
+          <p>Total Hints:</p>
+          <div id="hints_aft_slider"></div>
+        </div>
+      </div>
+      <div id="time_aft">
+        <div class="sliding">
+          <p>Total Time:</p>
+          <div id="time_aft_slider"></div>
+        </div>
+      </div>
+      <div id="correctRatio">
+        <div class="sliding">
+          <p>Incorrect Ratio:</p>
+          <div id="incorrect_ratio_slider"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="https://rawgit.com/simeydotme/jQuery-ui-Slider-Pips/master/dist/jquery-ui-slider-pips.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+    <script src="ex_analysis_bubble.js" charset="utf-8"></script>
+  </body>
+</html>

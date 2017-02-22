@@ -1,0 +1,8 @@
+{
+  "name": "OpenDSA Visualizations",
+  "description": "OpenDSA Exercises Analysis Visualization",
+  "repository": "https://github.com/hosamshahin/OpenDSA-Viz",
+  "logo": "https://raw.githubusercontent.com/OpenDSA/OpenDSA/master/lib/images/OpenDSALogoT64.png",
+  "success_url": "/index.php",
+  "keywords": ["OpenDSA", "Analysis", "Visualization"]
+}
