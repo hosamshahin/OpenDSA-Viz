@@ -26,8 +26,11 @@ The design is split into multiple distinct views:
 
 ## Parallel Coordinates View:
 
-![parallel](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png)
+<!-- ![parallel](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png) -->
 
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png">](https://opendsa-viz.herokuapp.com/home.html)
+
+<!-- [<img src="">](http://google.com.au/) -->
 The parallel coordinates view is split into two sections which consist of the
 parallel coordinates themselves and the raw data underneath in a table.
 
@@ -101,6 +104,7 @@ the graph.
 
 ## Total Reading Time Per Module View:
 ![Bubble](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/reading_time_module.png)
+
 
 Unlike the previous view, this view shows the per module analysis of total
 students reading time. It helps OpenDSA analysts to discover the reading
