@@ -26,11 +26,8 @@ The design is split into multiple distinct views:
 
 ## Parallel Coordinates View:
 
-<!-- ![parallel](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png) -->
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png">](https://opendsa-viz.herokuapp.com/home.html){target="_blank"}
 
-[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png">](https://opendsa-viz.herokuapp.com/home.html)
-
-<!-- [<img src="">](http://google.com.au/) -->
 The parallel coordinates view is split into two sections which consist of the
 parallel coordinates themselves and the raw data underneath in a table.
 
