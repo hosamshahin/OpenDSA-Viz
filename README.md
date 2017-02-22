@@ -26,7 +26,7 @@ The design is split into multiple distinct views:
 
 ## Parallel Coordinates View:
 
-[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png">](https://opendsa-viz.herokuapp.com/home.html){target="_blank"}
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel.png">](https://opendsa-viz.herokuapp.com/home.html)
 
 The parallel coordinates view is split into two sections which consist of the
 parallel coordinates themselves and the raw data underneath in a table.
@@ -43,6 +43,7 @@ The parallel coordinates view is highly interactive, supporting filtering, re-
 ordering (sorting), and selection of the data.
 
 ![Filter](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/filter.png)
+
 
 Single or multiple dimensions can be filtered by clicking and dragging along the
 axis to select the lower and upper threshold, and the filter can be dragged up
@@ -63,7 +64,7 @@ This connection between the data table and the parallel coordinates enables
 quick and easy exploration of the raw data.
 
 ## Bubble View:
-![Bubble](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/bubble.png)
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/bubble.png">](https://opendsa-viz.herokuapp.com/ex_analysis_bubble.html)
 
 The bubble view consists of a large central region with bubbles surrounded by
 various controls. To stay consistent with the parallel coordinates view, the
