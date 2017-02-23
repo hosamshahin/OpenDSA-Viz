@@ -42,7 +42,7 @@ smaller lines.
 The parallel coordinates view is highly interactive, supporting filtering, re-
 ordering (sorting), and selection of the data.
 
-![Filter](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/filter.png)
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/filter.png">](https://opendsa-viz.herokuapp.com/home.html)
 
 
 Single or multiple dimensions can be filtered by clicking and dragging along the
@@ -55,7 +55,7 @@ and insights.
 The coordinates can be reordered left and right so that relationships between
 any of the dimensions can be explored.
 
-![Parallel Filtered](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel_filtered.png)
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/parallel_filtered.png">](https://opendsa-viz.herokuapp.com/home.html)
 
 The raw data table underneath the graph updates dynamically whenever the analyst
 filters data in the parallel coordinates. Additionally, hovering over any of the
@@ -75,7 +75,7 @@ weights of each of the exercises and to identify outliers. For example, in the
 image above it is immediately apparent that the largest of the bubbles are
 almost all summary exercises, while JSAV exercises are the smallest.
 
-![Bubble2](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/bubble2.png)
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/bubble2.png">](https://opendsa-viz.herokuapp.com/ex_analysis_bubble.html)
 
 The bubble view implements interactivity through its controls. On the right side
 are several slider bars - one for each dimension. These slider bars allow the
@@ -86,7 +86,7 @@ only exercises which match a percentage of the weighted average.
 
 
 ## Total Reading Time View:
-![Bubble](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/reading_time.png)
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/reading_time.png">](https://opendsa-viz.herokuapp.com/reading_time.html)
 
 The total reading time view is a stacked chart that shows students reading time
 for all OpenDSA modules per a day. Students might start reading any of the
@@ -101,8 +101,7 @@ technique to show by selecting one of the options on the upper right corner of
 the graph.
 
 ## Total Reading Time Per Module View:
-![Bubble](https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/reading_time_module.png)
-
+[<img src="https://github.com/hosamshahin/OpenDSA-Viz/blob/master/images/reading_time_module.png">](https://opendsa-viz.herokuapp.com/reading_time_module.html)
 
 Unlike the previous view, this view shows the per module analysis of total
 students reading time. It helps OpenDSA analysts to discover the reading
