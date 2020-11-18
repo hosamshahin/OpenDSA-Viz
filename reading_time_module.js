@@ -2,7 +2,7 @@
 var test_data = [],
   config, base_dir, data_dir, semester
 
-$(function() {
+$(function () {
 
   test_data = getTestData()
 
@@ -11,7 +11,7 @@ $(function() {
   //   populateSelect($('#semesterList').val())
   // });
 
-  $('#display-btn').on("click", function() {
+  $('#display-btn').on("click", function () {
     drawChart()
   });
 
@@ -99,13 +99,13 @@ function getJSON(data) {
 function getTestData() {
 
   $.ajax({
-    url: '/data/reading_time_modules.json',
+    url: 'data/reading_time_modules.json',
     async: false,
     dataType: 'json',
-    success: function(data) {
+    success: function (data) {
       test_data = getJSON(data);
     },
-    error: function(data) {
+    error: function (data) {
       data = getJSON(data);
       if (data.hasOwnProperty('status') && data.status === 200) {
         console.error('JSON file is malformed. Please make sure your JSON is valid.');
@@ -118,7 +118,7 @@ function getTestData() {
   return test_data;
 }
 
-var expandLegend = function() {
+var expandLegend = function () {
   var exp = chart.legend.expanded();
   chart.legend.expanded(!exp);
   chart.update();
